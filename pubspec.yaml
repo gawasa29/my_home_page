@@ -1,0 +1,23 @@
+name: my_home_page
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_strategy: ^0.2.0
+  font_awesome_flutter: ^10.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: any
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
