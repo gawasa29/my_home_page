@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="ここはアップルだけ？" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- OGP -->
+    <!-- OGPで必須 -->
+    <meta property="og:title" content="佐川 優成だよん" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://my-home-page-30f20.firebaseapp.com/"
+    />
+    <meta
+      property="og:image"
+      content="https://firebasestorage.googleapis.com/v0/b/my-home-page-30f20.appspot.com/o/OGP%2FIMG_8206_Original%20.jpg?alt=media&token=7b1da458-531e-463f-9bd9-180c69f86707"
+    />
+
+    <!-- OGPで必須じゃない -->
+    <meta
+      property="og:description"
+      content="このサイトは僕のポートフォリをサイトだよん"
+    />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Twitterだけ表示が違う説" />
+    <meta
+      name="twitter:description"
+      content="ここで設定した値はTwitterだけこの表示になる？"
+    />
+    <meta
+      name="twitter:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Hiragana_letter_A.svg/1200px-Hiragana_letter_A.svg.png"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <script>
+      // The value below is injected by flutter build, do not touch.
+      var serviceWorkerVersion = "2270535798";
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer></script>
+  </head>
+  <body>
+    <script>
+      window.addEventListener("load", function (ev) {
+        // Download main.dart.js
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer.initializeEngine().then(function (appRunner) {
+              appRunner.runApp();
+            });
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
